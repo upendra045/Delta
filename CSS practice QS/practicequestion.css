@@ -1,0 +1,71 @@
+.container {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+.container div {
+  background-color: pink;
+  font-size: 1.5em;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  grid-column: span 12;
+  grid-row: span 1;
+}
+
+.sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  grid-row: span 10;
+  grid-column: span 3;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  grid-row: span 1;
+  grid-column: span 6;
+}
+
+.ads {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  grid-row: span 10;
+  grid-column: span 3;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  grid-row: span 9;
+  grid-column: span 6;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  grid-row: span 1;
+  grid-column: span 12;
+}
+
+@media (max-width: 720px) {
+  .header {
+    grid-column: 1 / span12;
+  }
+}

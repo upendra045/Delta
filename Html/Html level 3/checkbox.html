@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check box</title>
+  </head>
+  <body>
+    <form action="/server">
+      <input type="checkbox" name="age" id="age" />
+      <label for="age">I am 18+</label>
+      <!-- Radio button-->
+      <div>
+        <input type="radio" name="fruit" id="apple" value="apple" />
+        <label for="apple">apple</label>
+        <input type="radio" name="fruit" id="mango" value="mango" />
+        <label for="apple">mango</label>
+        <input type="radio" name="fruit" id="orange" value="orange" />
+        <label for="apple">orange</label>
+      </div>
+      <br />
+      <!-- dropdown element -->
+      chooser youre profession
+      <div>
+        <select name="profession" id="profession">
+          <option>Select youre option</option>
+          <option value="stu" selected>student</option>
+          <option value="dev">Developer</option>
+        </select>
+      </div>
+      <br />
+      <!-- range  -->
+      <div>
+        <label for="volume">Volume</label>
+        <input type="range" min="0" max="100" name="vol" step="10" />
+      </div>
+
+      <!-- text area -->
+      <br />
+      <label for="feedback">please give your valuable feedback:</label>
+      <textarea
+        name="feedback"
+        id="feedback"
+        name="feedback"
+        rows="4"
+        placeholder="write your feedback here"
+      ></textarea>
+
+      <button>sumbit</button>
+    </form>
+  </body>
+</html>
